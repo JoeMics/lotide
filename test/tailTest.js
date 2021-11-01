@@ -1,25 +1,22 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-// Test Case: Check the original array
-console.log("Test original array:");
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3); // original array should still have 3 elements!
+describe('#tail', () => {
+  it('should leave the original array untouched', () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    tail(words);
+    assert.deepEqual(words, ["Yo Yo", "Lighthouse", "Labs"]);
+  });
 
-// Test Case: Correct output
-console.log("Test tail output:");
-const numbers = [1, 22, 33];
-const tailedNumbers = tail(numbers);
-for (let i = 0; i < tailedNumbers.length; i++) {
-  assertEqual(tailedNumbers[i], numbers[i + 1]);
-}
+  it('should return an empty array when passed a single element array', () => {
+    assert.deepEqual(tail([1]), []);
+  });
 
-// Test Case: One element yields empty array by checking length
-console.log("One element yields empty array:");
-assertEqual(tail([1]).length, 0);
+  it('should return the array without the first element', () => {
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+  });
 
-
-// Test Case: Empty array should yield empty array
-console.log("Empty array yields empty array");
-assertEqual(tail([]).length, 0);
+  it('should return an empty array when passed an empty array', () => {
+    assert.deepEqual(tail([]), []);
+  });
+});

@@ -19,7 +19,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-module.export = assertArraysEqual;
+module.exports = assertArraysEqual;
 
 // Test Cases
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // Pass

@@ -35,12 +35,14 @@ const map = function(array, callback) {
   return results;
 };
 
-// Test Arrays
-const words = ["make", "me", "yell"];
-const numbers = [1, 2, 3, 4];
-const emptyArr = [];
+module.exports = map;
 
-const results1 = map(words, word => word[0]);
-assertArraysEqual(map(words, word => word.toUpperCase()), ["MAKE", "ME", "YELL"]);
-assertArraysEqual(map(numbers, number => number * number), [1, 4, 9, 16]);
-assertArraysEqual(map(emptyArr, x => x), []);
+// Test Arrays
+// const words = ["make", "me", "yell"];
+// const numbers = [1, 2, 3, 4];
+// const emptyArr = [];
+
+// const results1 = map(words, word => word[0]);
+// assertArraysEqual(map(words, word => word.toUpperCase()), ["MAKE", "ME", "YELL"]);
+// assertArraysEqual(map(numbers, number => number * number), [1, 4, 9, 16]);
+// assertArraysEqual(map(emptyArr, x => x), []);

@@ -18,12 +18,14 @@ const countLetters = function(string) {
   return letterCount;
 };
 
-const result = countLetters("lighthouse in the house");
+module.exports = countLetters;
 
-assertEqual(result['l'], 1);
-assertEqual(result['i'], 2);
-assertEqual(result['g'], 1);
-assertEqual(result['h'], 4);
-assertEqual(result['t'], 2);
-assertEqual(result['o'], 2);
-assertEqual(result['n'], 1);
+// const result = countLetters("lighthouse in the house");
+
+// assertEqual(result['l'], 1);
+// assertEqual(result['i'], 2);
+// assertEqual(result['g'], 1);
+// assertEqual(result['h'], 4);
+// assertEqual(result['t'], 2);
+// assertEqual(result['o'], 2);
+// assertEqual(result['n'], 1);

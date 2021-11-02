@@ -47,6 +47,8 @@ testObj4 = {
   two: 2,
 }
 
-assertObjectsEqual(testObj1, testObj2); // Pass
-assertObjectsEqual(testObj1, testObj3); // Fail
-assertObjectsEqual(testObj1, testObj4); // Fail
+module.exports = assertObjectsEqual;
+
+// assertObjectsEqual(testObj1, testObj2); // Pass
+// assertObjectsEqual(testObj1, testObj3); // Fail
+// assertObjectsEqual(testObj1, testObj4); // Fail

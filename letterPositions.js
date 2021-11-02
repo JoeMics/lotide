@@ -48,6 +48,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 
 // console.log(letterPositions('lighthouse in the house'));
 // {
@@ -63,8 +65,8 @@ const letterPositions = function(sentence) {
 //   n: [12]
 // }
 
-const str = 'hello ';
-assertArraysEqual(letterPositions(str)["h"], [0]);
-assertArraysEqual(letterPositions(str)["e"], [1]);
-assertArraysEqual(letterPositions(str)["l"], [2, 3]);
-assertArraysEqual(letterPositions(str)["o"], [4]);
+// const str = 'hello ';
+// assertArraysEqual(letterPositions(str)["h"], [0]);
+// assertArraysEqual(letterPositions(str)["e"], [1]);
+// assertArraysEqual(letterPositions(str)["l"], [2, 3]);
+// assertArraysEqual(letterPositions(str)["o"], [4]);

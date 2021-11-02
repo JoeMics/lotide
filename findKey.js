@@ -14,18 +14,20 @@ const findKey = function(obj, callback) {
   }
 };
 
-const data1 = {
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-};
+module.exports = findKey;
 
-assertEqual(findKey(data1, x => x.stars === 1), "Blue Hill");
-assertEqual(findKey(data1, x => x.stars === 3), "Akaleri");
-assertEqual(findKey(data1, x => x.stars === 2), "noma");
-assertEqual(findKey(data1, x => x.stars !== 3), "Blue Hill");
-assertEqual(findKey(data1, x => x.stars), "Blue Hill");
-assertEqual(findKey({}, x => x.stars), undefined);
+// const data1 = {
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// };
+
+// assertEqual(findKey(data1, x => x.stars === 1), "Blue Hill");
+// assertEqual(findKey(data1, x => x.stars === 3), "Akaleri");
+// assertEqual(findKey(data1, x => x.stars === 2), "noma");
+// assertEqual(findKey(data1, x => x.stars !== 3), "Blue Hill");
+// assertEqual(findKey(data1, x => x.stars), "Blue Hill");
+// assertEqual(findKey({}, x => x.stars), undefined);

@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@joe-mics/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A library based on lodash, created only for education purposes in the Lighthouse Labs Bootcamp",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/JoeMics/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "@joe-mics",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JoeMics/lotide/issues"
